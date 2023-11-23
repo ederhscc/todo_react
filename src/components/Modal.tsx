@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Modal = ({ children }: Props) => {
-  const closeModal = (e: React.MouseEvent): void => {
+  const closeModal = (): void => {
     const modal = document.getElementById("modal");
     modal!.classList.add("hide");
   };

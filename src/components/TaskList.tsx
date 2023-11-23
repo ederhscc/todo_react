@@ -1,4 +1,3 @@
-import React from "react";
 import { ITask } from "../interfaces/Task";
 import styles from "./TaskList.module.css";
 
