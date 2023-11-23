@@ -1,30 +1,107 @@
-# React + TypeScript + Vite
+# Projeto React + TS ToDo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objetivo
 
-Currently, two official plugins are available:
+- Construir gerenciador de tarefas utilizando o TypeScrip e o React. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## Expanding the ESLint configuration
+## Índice 📜
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Screenshot
 
-- Configure the top-level `parserOptions` property like this:
+#### Requisitos do Projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+#### O Projeto
+
+#### Tecnologias Usadas
+
+#### Como rodar o projeto
+
+<br>
+
+## Screenshot 🎬
+
+<div align='center'>
+<img src="./src/assets/todo.gif" alt="imagem do projeto">
+</div>
+
+<br>
+
+## Requisitos funcionais do Projeto 🧾
+
+- O site terá uma tela para cadastro de nova tarefa com as seguintes informações: o título da tarefa e o grau de dificuldade da tarefa;
+- cada tarefa terá um botão de edição e exclusão da tarefa;
+- ao clicar no botão de edição deverá abrir na mesma tela o formulário para edição;
+- as novas tarefas serão exibidas uma em baixo das outras.
+
+<br>
+
+## O Projeto 📚
+
+Este projeto faz parte do aprendizado em React com TypeScript. Por isso, mais do que uma aplicação Web este programa gerenciador de tarefas foi projetado para colocar em prática os conceitos da biblioteca React com TypeScript, como componentes, props, interfaces, generics entre outros. 
+
+<br>
+
+<br>
+
+## Tecnologias Usadas 🛠
+
+- React;
+- TypeScript;
+- JavaScript;
+- Vite;
+- CSS;
+- Bootstrap.
+
+<br>
+
+## Como rodar o projeto 🎮
+
+Clone o repositório
+```bash
+git clone https://github.com/ederhscc/todo_react
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+ Acesse a pasta do projeto
+```bash
+cd todo_react
+
+```
+
+Instalar as dependências
+```bash
+npm install
+```
+
+Execute a aplicação
+```bash
+npm run dev
+```
+
+<br>
+
+## Autor 🧑
+
+### Eder Henrique Santos
+
+<br>
+
+## Links 🔗
+
+Deploy: https://
+
+<div align="left">
+
+  <a href = "mailto:ederhscc@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/-Gmail-%23E4405F?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" width="150px" height="35px">
+  </a>
+  </br>
+  <a href="https://www.linkedin.com/in/eder-henrique-santos" target="_blank">
+  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" width="150px" height="35px">
+  </a>
+  </br>
+
+</div>
+
+
