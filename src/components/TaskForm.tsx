@@ -10,9 +10,16 @@ interface Props {
   taskList: ITask[];
   setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
   task?: ITask | null;
+  handleUpdate?(id: number, title: string, difficulty: number): void;
 }
 
-const TaskForm = ({ btnText, taskList, setTaskList, task }: Props) => {
+const TaskForm = ({
+  btnText,
+  taskList,
+  setTaskList,
+  task,
+  handleUpdate,
+}: Props) => {
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>("");
   const [difficulty, setDifficulty] = useState<number>(0);
@@ -28,15 +35,19 @@ const TaskForm = ({ btnText, taskList, setTaskList, task }: Props) => {
   const addTaskHandler = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // criar um id arredondado para baixo
-    const id = Math.floor(Math.random() * 1000);
+    if (handleUpdate) {
+      handleUpdate(id, title, difficulty);
+    } else {
+      // criar um id arredondado para baixo
+      const id = Math.floor(Math.random() * 1000);
 
-    const newTask: ITask = { id, title, difficulty };
+      const newTask: ITask = { id, title, difficulty };
 
-    setTaskList!([...taskList, newTask]);
+      setTaskList!([...taskList, newTask]);
 
-    setTitle("");
-    setDifficulty(0);
+      setTitle("");
+      setDifficulty(0);
+    }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
