@@ -89,7 +89,7 @@ npm run dev
 
 ## Links 🔗
 
-Deploy: https://
+Deploy: https://ederhscc.github.io/todo_react/
 
 <div align="left">
 
